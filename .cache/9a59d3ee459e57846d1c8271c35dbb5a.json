@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports = {\n  \"properties\": {\n    \"beforeRequest\": {\n      \"$ref\": \"#cacheEntry\"\n    },\n    \"afterRequest\": {\n      \"$ref\": \"#cacheEntry\"\n    },\n    \"comment\": {\n      \"type\": \"string\"\n    }\n  }\n}\n;"},"hash":"a3bca76bb4005aef2ec53f075d292180","cacheData":{}}
