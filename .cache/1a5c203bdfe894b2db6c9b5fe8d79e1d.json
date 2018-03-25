@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports = {\r\n  \"type\": \"object\",\r\n  \"required\": [\r\n    \"log\"\r\n  ],\r\n  \"properties\": {\r\n    \"log\": {\r\n      \"$ref\": \"#log\"\r\n    }\r\n  }\r\n}\r\n;"},"hash":"73416d7c6250721f6161077561577dfa","cacheData":{}}

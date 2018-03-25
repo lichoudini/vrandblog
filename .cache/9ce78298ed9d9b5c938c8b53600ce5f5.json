@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./src\\main.js","dynamic":true}],"generated":{"html":"<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"utf-8\"> <title>My Vue.js App</title> </head> <body> <div id=\"app\"></div>  <script src=\"/dist/d931b9007baa5901e8adc68e1473b2a7.js\"></script> </body> </html>"},"hash":"5d599ddfaea2ade108d43c3727954576","cacheData":{}}
