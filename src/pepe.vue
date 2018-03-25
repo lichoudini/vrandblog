@@ -1,7 +1,7 @@
 <template>
-  <div class='pepe'>
+  <div class='lastpost'>
     <div id='titulo'>
-      <p>{{posts[1]}}</p>
+      <p>{{titulo}}</p>
     </div>
     <div id='subtitulo'>
       <p>{{subtitulo}}</p>
@@ -16,28 +16,36 @@
 var unirest = require('unirest');
 export default {
   name:'notas',
-  data () {
-    return {
-      posts:[],
-      nombre:'hkppkpkppka'
-    }
-  },
   created() {
     var self = this;
     unirest.get('http://www.vrand.com.ar/blog/api.php?opn=posts')
-.send({ "parameter": 23, "foo": "bar" })
-.end(function (response) {
-  self.posts=response.body;
-});
-}
+    .end(function (response) {
+      self.posts=response.body;
+      self.titulo=self.posts[response.body.length -1].titulo;
+      self.subtitulo=self.posts[response.body.length -1].subtitulo;
+      self.texto=self.posts[response.body.length -1].texto;      
+    });
+  },
+  data () {
+    return {
+      posts:[],
+      titulo:'',
+      subtitulo:'',
+      texto:''
+    }
+  },
+  methods:{
+    postrequerido: function(quepost){
+      return this.titulo =this.posts[quepost].titulo;
+    }
+  }
 }
 
 
 </script>
 
 <style lang="css">
-  .pepe {
-    min-width: 370px;
+  .lastpost {
     padding: 50px 50px 50px 50px;
     background-color: #AA3E39;
     color:#fff;

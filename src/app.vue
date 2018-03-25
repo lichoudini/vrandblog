@@ -39,7 +39,6 @@ export default {
 
 <style lang="css">
   .app {
-  	min-width: 370px;
   	padding: 50px 50px 50px 50px;
     background-color: #68979B;
     color:#fff;
